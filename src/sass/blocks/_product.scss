@@ -1,0 +1,191 @@
+.product {
+    width: 80.56%;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include tablet {
+        width: 81.77%;
+    }
+
+    @include desktop {
+        width: 1300px;
+    }
+}
+
+.product__main {
+    @include tablet {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0 20px;
+    }
+
+    @include desktop {
+        gap: 0 90px;
+        grid-template-columns: 1fr 1.75fr;
+    }
+}
+
+.product__title {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    color: #0E0E30;
+}
+
+.product__text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19.6px;
+    color: #0F172A;
+
+    @include tablet {
+        padding-right: 170px;
+        margin-bottom: 32px;
+    }
+
+    @include desktop {
+        padding-right: 900px;
+    }
+}
+
+.product-view {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include tablet {
+        height: 601px;
+        background-color: #fff;
+        border-radius: 8px;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    @include desktop {
+        width: 440px;
+        height: 655px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+
+.product-view__main {
+    @include tablet {
+        width: 288px;
+        height: 343px;
+        padding-top: 28px;
+        padding-bottom: 28px;
+
+        &--nazatek {
+            height: 313px;
+        }
+
+        &--filarmex,
+        &--farfolex,
+        &--istaran {
+            height: 320px;
+        }
+    }
+
+    @include desktop {
+        width: 320px;
+        height: 380px;
+
+        &--vizolayt {
+            width: 340px;
+            height: 360px;
+        }
+
+        &--nazatek,
+        &--istaran,
+        &--filarmex,
+        &--farfolex {
+            width: 330px;
+            height: 360px;
+        }
+    }
+}
+
+.product-mini-view {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.product-mini-view__img {
+    &:focus {
+        border: 1px solid #CBD5E1;
+        border-radius: 8px;
+    }
+
+    @include desktop {
+        width: 100px;
+        height: 106px;
+
+        &--vizolayt {
+            width: 110px;
+        }
+
+        &--nazatek,
+        &--farfolex {
+            height: 96px;
+        }
+
+        &--filarmex,
+        &--istaran {
+            height: 94px;
+        }
+    }
+}
+
+.product-mini-view__text {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 14px;
+    color: #CBD5E1;
+    margin-right: 95px;
+    padding-top: 14px;
+
+    @include tablet {
+        padding-right: 45px;
+        padding-left: 2px;
+        padding-top: 30px;
+    }
+}
+
+.product-description {
+    @include tablet {
+        margin-top: -15px;
+    }
+}
+
+.product-description__title {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    color: #0E0E30;
+    padding-top: 22px;
+
+    &:first-child {
+        padding-top: 0px;
+    }
+}
+
+.product-description__text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19.6px;
+    color: #0F172A;
+}
+
+.product-description__list {
+    list-style-type: disc;
+}
+
+.product-description__item {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19.6px;
+    color: #0F172A;
+}

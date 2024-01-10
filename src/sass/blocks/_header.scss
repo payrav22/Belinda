@@ -1,0 +1,201 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 76px;
+    width: 80.56%;
+    height: 56px;
+    margin: 0 auto;
+
+    @include tablet {
+        width: 81.77%;
+        height: 64px;
+        justify-content: space-between;
+        gap: 0;
+    }
+
+    @include desktop {
+        width: 1300px;
+        height: 112px;
+    }
+}
+
+.header__logo {
+    @include tablet {
+        width: 92px;
+        height: 34px;
+    }
+
+    @include desktop {
+        width: 131.5px;
+        height: 48px;
+    }
+}
+
+.header-buy {
+    display: flex;
+    order: -1;
+
+    @include tablet {
+        gap: 8px;
+        transition: .2s;
+        order: 0;
+    }
+
+    @include desktop {
+        gap: 16px;
+    }
+
+    &:hover .header-buy__icon {
+        background-color: #059669;
+    }
+}
+
+
+.header-buy__text {
+    display: none;
+
+    @include tablet {
+        color: #0F172A;
+        font-size: 11px;
+        font-weight: 400;
+        line-height: 19.6px;
+        display: inline;
+        text-align: right;
+    }
+
+    @include desktop {
+        font-size: 14px;
+    }
+}
+
+.header-buy__span {
+    @include tablet {
+        color: #7F7FFA;
+        font-size: 13px;
+        font-weight: 600;
+        line-height: 22.4px;
+    }
+
+    @include desktop {
+        font-size: 16px;
+    }
+}
+
+.header-buy__icon {
+    width: 30px;
+    height: 30px;
+    background-color: #CBD5E1;
+    border-radius: 50%;
+    color: #FFF;
+    padding: 5px 8px;
+    transition: .2s;
+
+    @include tablet {
+        width: 40px;
+        height: 40px;
+        padding: 11px;
+        margin-top: 12px;
+    }
+
+    @include desktop {
+        width: 48px;
+        height: 48px;
+        padding: 13px;
+    }
+}
+
+.buy__icon {
+    width: 12.5px;
+    height: 12.5px;
+
+    @include tablet {
+        width: 16.7px;
+        height: 16.7px;
+    }
+
+    @include desktop {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.header-tel {
+    display: none;
+
+    @include desktop {
+        display: flex;
+        gap: 16px;
+        transition: .2s;
+    }
+
+    &:hover .header-tel__icon {
+        background-color: #059669;
+    }
+
+    &--nav {
+        display: flex;
+        align-items: center;
+        gap: 0 16px;
+        margin-top: 140px;
+
+
+        @include tablet {
+            display: none;
+        }
+    }
+}
+
+.header-tel__text {
+    color: #0F172A;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 19.6px;
+    text-align: right;
+
+    @include desktop {
+        font-size: 14px;
+    }
+}
+
+.header-tel__span {
+    color: #7F7FFA;
+    font-size: 14px;
+    line-height: 22.4px;
+    font-weight: 600;
+
+    @include desktop {
+        font-size: 16px;
+    }
+}
+
+.header-tel__icon {
+    width: 40px;
+    height: 40px;
+    color: #FFF;
+    background-color: #CBD5E1;
+    border-radius: 50%;
+    padding-left: 12px;
+    padding-top: 10px;
+
+    @include desktop {
+        width: 48px;
+        height: 48px;
+        padding: 15px;
+        margin-top: 12px;
+    }
+
+    &:hover {
+        background-color: #059669;
+    }
+}
+
+.tel__icon {
+    width: 15px;
+    height: 15px;
+
+    @include desktop {
+        width: 18px;
+        height: 18px;
+    }
+}

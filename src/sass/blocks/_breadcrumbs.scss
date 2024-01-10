@@ -1,0 +1,47 @@
+.breadcrumbs {
+    width: 80.56%;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include tablet {
+        width: 81.77%;
+    }
+
+    @include desktop {
+        width: 1300px;
+    }
+}
+
+.breadcrumbs__list {
+    display: flex;
+    margin-left: -40px;
+    margin-top: 22px;
+    margin-bottom: 32px;
+}
+
+.breadcrumbs__item {
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 15.4px;
+
+    &--active {
+        font-weight: 600;
+    }
+}
+
+.breadcrumbs__link {
+    color: #475569;
+    transition: .2s;
+
+    &:hover {
+        color: #10B981;
+    }
+}
+
+.breadcrumbs__icon {
+    color: #7F7FFA;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    display: inline-block;
+}

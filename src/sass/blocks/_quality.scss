@@ -1,0 +1,127 @@
+.quality {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/guarantee-mobile.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 336px;
+    color: #fff;
+    padding-top: 60px;
+    padding-left: 35px;
+    padding-right: 35px;
+    object-fit: cover;
+    margin-top: 16px;
+
+    &--mod {
+        align-items: start;
+        background-image: url(../img/health-mobile.png);
+        height: 300px;
+        margin-top: 50px;
+        padding: 45px 33px 0 33px;
+    }
+
+    @include tablet {
+        background-image: url(../img/guarantee-tablet.png);
+        align-items: start;
+        width: 81.77%;
+        height: 250px;
+        margin: 32px auto;
+        padding-top: 0;
+        border-radius: 8px;
+
+        &--mod {
+            background-image: url(../img/health-tablet.png);
+            padding-right: 35px;
+            margin-top: 32px;
+        }
+    }
+
+    @include desktop {
+        background-image: url(../img/guarantee-desktop.png);
+        width: 1300px;
+        height: 272px;
+        padding-left: 70px;
+
+        &--mod {
+            background-image: url(../img/health-desktop.png);
+            color: #0F172A;
+        }
+    }
+}
+
+.quality__title {
+    &--mod {
+        font-size: 22px;
+
+        @include tablet {
+            font-size: 24px;
+        }
+    }
+
+    @include tablet {
+        margin-top: -10px;
+    }
+}
+
+.quality__text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22.5px;
+    text-align: center;
+    margin-top: -10px;
+
+    &--mod {
+        text-align: start;
+        font-size: 12px;
+        padding-right: 60px;
+    }
+
+    @include tablet {
+        font-size: 16px;
+        text-align: start;
+        padding-right: 180px;
+
+        &--mod {
+            font-weight: 700;
+        }
+    }
+
+    @include desktop {
+        padding-right: 850px;
+
+        &--mod {
+            font-weight: 400;
+        }
+    }
+}
+
+.quality__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 48px;
+    background-color: #059669;
+    color: #fff;
+    border-radius: 8px;
+    transition: .2s;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 19.6px;
+
+    &:hover {
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.10);
+    }
+
+    @include tablet {
+        width: 36.2%;
+    }
+
+    @include desktop {
+        width: 16.43%;
+    }
+}

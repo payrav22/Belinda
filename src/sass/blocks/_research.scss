@@ -1,0 +1,283 @@
+.research {
+    @include tablet {
+        width: 100%;
+        background-color: #fff;
+    }
+}
+
+.research__div {
+    width: 80.56%;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include tablet {
+        width: 81.77%;
+        padding-top: 12px;
+    }
+
+    @include desktop {
+        width: 1300px;
+    }
+}
+
+.research__list {
+    &--mod {
+        display: flex;
+        flex-direction: column;
+        margin-left: -40px;
+        gap: 20px;
+
+        @include tablet {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
+
+.research__list .slick-track {
+    gap: 0 10px;
+}
+
+.research__item {
+    width: 100%;
+    padding-top: 30px;
+    padding-left: 22px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 272px;
+    border-radius: 8px;
+    padding-right: 22px;
+    object-fit: cover;
+
+    @include tablet {
+        height: 230px;
+        padding-top: 0px;
+        margin-bottom: 32px;
+    }
+
+    @include desktop {
+        height: 272px;
+        padding-top: 30px;
+        padding-left: 48px;
+        padding-right: 300px;
+    }
+
+    &:first-child {
+        background-image: url(../img/farfolex-background-mobile.png);
+
+        @include tablet {
+            background-image: url(../img/farfolex-background-tablet.png);
+        }
+
+        @include desktop {
+            background-image: url(../img/farfolex-background-desktop.png);
+        }
+    }
+
+    &:nth-child(2) {
+        background-image: url(../img/otibels-background-mobile.png);
+
+        @include tablet {
+            background-image: url(../img/otibels-background-tablet.png);
+        }
+
+        @include desktop {
+            background-image: url(../img/otibels-background-desktop.png);
+        }
+    }
+}
+
+.research__header {
+    font-size: 20px;
+    color: #0F172A;
+    line-height: 28px;
+}
+
+.research__title {
+    font-size: 20px;
+    color: #fff;
+    line-height: 28px;
+}
+
+.research__text {
+    font-size: 14px;
+    line-height: 22.4px;
+    font-weight: 400;
+    color: #fff;
+    margin-top: -14px;
+    margin-bottom: 26px;
+}
+
+.research__link {
+    display: block;
+    width: 48.88%;
+    text-align: center;
+    color: #FFF;
+    margin-top: -10px;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 19.6px;
+    border: 1px solid var(--success-success-500, #10B981);
+    border-radius: 8px;
+    transition: .2s;
+
+    &:hover {
+        background-color: #10B981;
+    }
+
+    @include tablet {
+        width: 50%;
+    }
+
+    @include desktop {
+        width: 42%;
+    }
+
+    &--otibels {
+        @include desktop {
+            width: 44.88%;
+        }
+    }
+
+}
+
+.research-content__inner {
+    width: 80.56%;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include tablet {
+        width: 81.77%;
+        display: flex;
+        gap: 0 20px;
+    }
+
+    @include desktop {
+        width: 1300px;
+    }
+}
+
+.research-products {
+    display: none;
+
+    @include tablet {
+        display: block;
+        width: 223px;
+    }
+
+    @include desktop {
+        width: 310px;
+    }
+}
+
+.research-results {
+    @include tablet {
+        background-color: #fff;
+        padding: 14px 24px 0 24px;
+        border-radius: 8px;
+    }
+
+    @include desktop {
+        width: 970px;
+    }
+}
+
+.research-results__title {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    color: #06102B;
+
+    @include tablet {
+        font-size: 15px;
+        padding-right: 100px;
+        line-height: normal;
+    }
+
+    @include desktop {
+        font-size: 20px;
+    }
+}
+
+.research-results__subtitle {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 19.6px;
+    color: #10B981;
+
+    @include desktop {
+        font-size: 14px;
+    }
+}
+
+.research-results__text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19.6px;
+    color: #0F172A;
+}
+
+
+.research-product {
+    @include tablet {
+        background-image: url(../img/otibels-background-tablet.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        height: 272px;
+        object-fit: cover;
+        color: #fff;
+        padding-top: 44px;
+        padding-left: 20px;
+        padding-right: 10px;
+        margin-top: 12px;
+    }
+
+    @include desktop {
+        padding-top: 46px;
+        padding-left: 48px;
+        padding-right: 25px;
+    }
+
+    &--mod {
+        background-image: url(../img/farfolex-background-tablet.png);
+    }
+}
+
+.research-product__title {
+    @include tablet {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 28px;
+        margin: 0;
+    }
+}
+
+.research-product__text {
+    @include tablet {
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 19.6px;
+        margin: 0;
+        padding-top: 20px;
+        padding-bottom: 16px;
+    }
+}
+
+.research-product__link {
+    @include tablet {
+        display: inline-block;
+        text-align: center;
+        padding: 9.5px 40px;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 19.6px;
+        border: 1px solid var(--success-success-500, #10B981);
+        border-radius: 8px;
+        transition: .2s;
+    }
+
+    &:hover {
+        background-color: #10B981;
+    }
+}
